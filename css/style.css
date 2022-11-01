@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+.parent {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "menu"
+    "footer";
+}
+
+header,
+main,
+footer,
+.menu {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    grid-area: header;
+}
+
+main {
+    background-color: #f1f1f1;
+    grid-area: main;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    grid-area: footer;
+}
+
+.menu {
+    background-color: #ccc;
+    grid-area: menu;
+}
+
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=textarea], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+nput[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+nput[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+nput[type=file], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.box-div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 40pc;
+}
+
+
+@media (min-width: 768px) {
+    .parent {
+        grid-template-areas:
+        "header header header header header header"
+        "menu main main main main main"
+        "footer footer footer footer footer footer";
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .parent {
+        grid-template-areas:
+        "header header header header header header"
+        "menu main main main main main"
+        "footer footer footer footer footer footer";
+    }
+}
