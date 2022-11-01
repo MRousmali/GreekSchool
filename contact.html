@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
+    <title>Greek School Sofia</title>
+</head>
+
+<body>
+
+<div class="parent">
+    <header>
+        <div>
+            <img src="images/LOGO-English.webp" alt="Greek School" style="width:128px;height:128px;">
+        </div>
+    </header>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+
+        <h1> Contact Form</h1>
+        <form name="contact" method="post" data-netlify="true">
+            <div class="box-div">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Italy">Italy</option>
+                </select>
+
+                <label for="decription">Description</label>
+                <textarea typeof="textarea" id="decription" name="decription" rows="5" cols="85"
+                          placeholder="Your description..">
+                </textarea>
+                </p>
+                <label>File</label>
+                <input type="file" name="file"/>
+                </p>
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <div>Copyright Maria Rousmali ©️
+            2022
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
