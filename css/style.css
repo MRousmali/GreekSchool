@@ -1,13 +1,10 @@
-body {
-    margin: 0;
-}
 
 .parent {
     display: grid;
     grid-template-areas:
     "header"
-    "main"
     "menu"
+    "main"
     "footer";
 }
 
@@ -124,23 +121,30 @@ input[type=submit]:hover {
 }
 
 .box-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 40pc;
+    /*border-radius: 5px;*/
+    /*background-color: #f2f2f2;*/
+    /*padding: 20px;*/
+    /*width: 40pc;*/
 }
 
 
-@media (min-width: 768px) {
-    .parent {
+@media (max-width: 600px) {
+    body {
+        width: 350px;
+    }
+    form {
+        width: 350px;
+    }
+        .parent {
         grid-template-areas:
         "header header header header header header"
-        "menu main main main main main"
+        "menu menu menu menu menu menu"
+        "main main main main main main"
         "footer footer footer footer footer footer";
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     .parent {
         grid-template-areas:
         "header header header header header header"
